@@ -1,0 +1,23 @@
+{
+  "name": "queteexpress-sql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloubna/QueteExpress-SQL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bloubna/QueteExpress-SQL/issues"
+  },
+  "homepage": "https://github.com/bloubna/QueteExpress-SQL#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
