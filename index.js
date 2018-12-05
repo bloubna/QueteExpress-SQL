@@ -105,12 +105,11 @@ app.put('/api/pilote/:id', (req, res) => {
 });
 
 //toggle boolean
-app.put('/api/avion/:status', (req, res) => {
+app.put('/api/avion/:id', (req, res) => {
 
-    const status = req.params.status;
-    const data = req.body;
+    const idAvion = req.params.id;
 
-    connection.query('UPDATE avion SET ? WHERE status= ?', [data, status], err => {
+    connection.query('UPDATE avion SET status = !status where id_av = ?', [idAvion], err => {
         if (err) {
             console.log(err);
             res.status(500).send("Erreur lors de la modification d'un avion");
